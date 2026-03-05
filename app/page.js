@@ -78,7 +78,7 @@ export default function Home() {
       <header style={{ position: "sticky", top: 0, zIndex: 10, background: "rgba(255,255,255,0.92)", backdropFilter: "blur(10px)", borderBottom: `1px solid ${COLORS.line}` }}>
         <div style={{ maxWidth: 1100, margin: "0 auto", padding: "14px 16px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <img src="/logo.png" alt="Laundry Day" style={{ height: 34, width: "auto" }} />
+            <img src="/publiclogo.png" alt="Laundry Day" style={{ height: 34, width: "auto" }} />
             <div style={{ fontWeight: 900 }}>
               <span style={{ color: COLORS.orange }}>Laundry</span>{" "}
               <span style={{ color: COLORS.green }}>Day</span>{" "}
@@ -185,3 +185,4 @@ export default function Home() {
     </div>
   );
 }
+
