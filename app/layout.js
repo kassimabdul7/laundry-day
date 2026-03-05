@@ -29,8 +29,12 @@ const buttonStyle = (bg) => ({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body style={{ margin: 0, fontFamily: "ui-sans-serif, system-ui, Arial", color: COLORS.ink, background: COLORS.bg }}>
-        <header style={{ position: "sticky", top: 0, zIndex: 10, background: "rgba(255,255,255,0.92)", backdropFilter: "blur(10px)", borderBottom: `1px solid ${COLORS.line}` }}>
+<body style={{
+  margin: 0,
+  fontFamily: 'ui-sans-serif, system-ui, -apple-system, Segoe UI, Inter, Arial',
+  color: COLORS.ink,
+  background: "linear-gradient(180deg, rgba(31,167,225,0.10) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 100%)"
+}}>        <header style={{ position: "sticky", top: 0, zIndex: 10, background: "rgba(255,255,255,0.92)", backdropFilter: "blur(10px)", borderBottom: `1px solid ${COLORS.line}` }}>
           <div style={{ maxWidth: 1100, margin: "0 auto", padding: "14px 16px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12 }}>
             <a href="/" style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none" }}>
               <img src="/logo.png" alt="Laundry Day" style={{ height: 34, width: "auto" }} />
