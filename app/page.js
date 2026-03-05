@@ -74,23 +74,6 @@ function buttonStyle(bg) {
 export default function Home() {
   return (
     <div style={{ background: COLORS.bg, color: COLORS.ink }}>
-      {/* Header */}
-      <header style={{ position: "sticky", top: 0, zIndex: 10, background: "rgba(255,255,255,0.92)", backdropFilter: "blur(10px)", borderBottom: `1px solid ${COLORS.line}` }}>
-        <div style={{ maxWidth: 1100, margin: "0 auto", padding: "14px 16px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12 }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <img src="/publiclogo.png" alt="Laundry Day" style={{ height: 34, width: "auto" }} />
-            <div style={{ fontWeight: 900 }}>
-              <span style={{ color: COLORS.orange }}>Laundry</span>{" "}
-              <span style={{ color: COLORS.green }}>Day</span>{" "}
-              <span style={{ color: "rgba(0,0,0,0.55)", fontSize: 13 }}>Laundromats</span>
-            </div>
-          </div>
-
-          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <a href={`tel:${PHONE_TEL}`} style={buttonStyle(COLORS.orange)}>Call {PHONE_DISPLAY}</a>
-          </div>
-        </div>
-      </header>
 
       {/* Hero */}
       <section style={{ borderBottom: `1px solid ${COLORS.line}`, background: `linear-gradient(180deg, rgba(31,167,225,0.14), rgba(255,255,255,1))` }}>
@@ -169,20 +152,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer style={{ borderTop: `1px solid ${COLORS.line}`, padding: "28px 16px", background: "white" }}>
-        <div style={{ maxWidth: 1100, margin: "0 auto", display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: 10 }}>
-          <div style={{ fontWeight: 950 }}>
-            <span style={{ color: COLORS.orange }}>Laundry</span>{" "}
-            <span style={{ color: COLORS.green }}>Day</span>{" "}
-            <span style={{ color: "rgba(0,0,0,0.55)", fontSize: 13 }}>Laundromats</span>
-          </div>
-          <a href={`tel:${PHONE_TEL}`} style={{ fontWeight: 950, color: COLORS.dark, textDecoration: "none" }}>
-            Call {PHONE_DISPLAY}
-          </a>
-        </div>
-      </footer>
+
     </div>
   );
 }
+
 
